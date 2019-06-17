@@ -1,0 +1,42 @@
+/Users/shehryarkhan/Projects/Dynamic User-Defined Dashboards/bin/Debug/netcoreapp2.2/Dynamic User-Defined Dashboards.deps.json
+/Users/shehryarkhan/Projects/Dynamic User-Defined Dashboards/bin/Debug/netcoreapp2.2/Dynamic User-Defined Dashboards.runtimeconfig.json
+/Users/shehryarkhan/Projects/Dynamic User-Defined Dashboards/bin/Debug/netcoreapp2.2/Dynamic User-Defined Dashboards.runtimeconfig.dev.json
+/Users/shehryarkhan/Projects/Dynamic User-Defined Dashboards/bin/Debug/netcoreapp2.2/Dynamic User-Defined Dashboards.dll
+/Users/shehryarkhan/Projects/Dynamic User-Defined Dashboards/bin/Debug/netcoreapp2.2/Dynamic User-Defined Dashboards.pdb
+/Users/shehryarkhan/Projects/Dynamic User-Defined Dashboards/bin/Debug/netcoreapp2.2/Dynamic User-Defined Dashboards.Views.dll
+/Users/shehryarkhan/Projects/Dynamic User-Defined Dashboards/bin/Debug/netcoreapp2.2/Dynamic User-Defined Dashboards.Views.pdb
+/Users/shehryarkhan/Projects/Dynamic User-Defined Dashboards/obj/Debug/netcoreapp2.2/Dynamic User-Defined Dashboards.csprojAssemblyReference.cache
+/Users/shehryarkhan/Projects/Dynamic User-Defined Dashboards/obj/Debug/netcoreapp2.2/Dynamic User-Defined Dashboards.csproj.CoreCompileInputs.cache
+/Users/shehryarkhan/Projects/Dynamic User-Defined Dashboards/obj/Debug/netcoreapp2.2/Dynamic User-Defined Dashboards.RazorAssemblyInfo.cache
+/Users/shehryarkhan/Projects/Dynamic User-Defined Dashboards/obj/Debug/netcoreapp2.2/Dynamic User-Defined Dashboards.RazorAssemblyInfo.cs
+/Users/shehryarkhan/Projects/Dynamic User-Defined Dashboards/obj/Debug/netcoreapp2.2/Dynamic User-Defined Dashboards.AssemblyInfoInputs.cache
+/Users/shehryarkhan/Projects/Dynamic User-Defined Dashboards/obj/Debug/netcoreapp2.2/Dynamic User-Defined Dashboards.AssemblyInfo.cs
+/Users/shehryarkhan/Projects/Dynamic User-Defined Dashboards/obj/Debug/netcoreapp2.2/Dynamic User-Defined Dashboards.TagHelpers.input.cache
+/Users/shehryarkhan/Projects/Dynamic User-Defined Dashboards/obj/Debug/netcoreapp2.2/Dynamic User-Defined Dashboards.TagHelpers.output.cache
+/Users/shehryarkhan/Projects/Dynamic User-Defined Dashboards/obj/Debug/netcoreapp2.2/Dynamic User-Defined Dashboards.RazorCoreGenerate.cache
+/Users/shehryarkhan/Projects/Dynamic User-Defined Dashboards/obj/Debug/netcoreapp2.2/Razor/Views/Shared/_Layout.g.cshtml.cs
+/Users/shehryarkhan/Projects/Dynamic User-Defined Dashboards/obj/Debug/netcoreapp2.2/Razor/Views/Shared/_MainMenu.g.cshtml.cs
+/Users/shehryarkhan/Projects/Dynamic User-Defined Dashboards/obj/Debug/netcoreapp2.2/Razor/Views/_ViewStart.g.cshtml.cs
+/Users/shehryarkhan/Projects/Dynamic User-Defined Dashboards/obj/Debug/netcoreapp2.2/Dynamic User-Defined Dashboards.RazorTargetAssemblyInfo.cache
+/Users/shehryarkhan/Projects/Dynamic User-Defined Dashboards/obj/Debug/netcoreapp2.2/Dynamic User-Defined Dashboards.RazorTargetAssemblyInfo.cs
+/Users/shehryarkhan/Projects/Dynamic User-Defined Dashboards/obj/Debug/netcoreapp2.2/Dynamic User-Defined Dashboards.Views.pdb
+/Users/shehryarkhan/Projects/Dynamic User-Defined Dashboards/obj/Debug/netcoreapp2.2/Dynamic User-Defined Dashboards.dll
+/Users/shehryarkhan/Projects/Dynamic User-Defined Dashboards/obj/Debug/netcoreapp2.2/Dynamic User-Defined Dashboards.pdb
+/Users/shehryarkhan/Projects/Dynamic User-Defined Dashboards/obj/Debug/netcoreapp2.2/Dynamic User-Defined Dashboards.csproj.CopyComplete
+/Users/shehryarkhan/Projects/Dynamic User-Defined Dashboards/obj/Debug/netcoreapp2.2/Razor/Views/Dashboard/Elements/Default.g.cshtml.cs
+/Users/shehryarkhan/Projects/Dynamic User-Defined Dashboards/obj/Debug/netcoreapp2.2/Razor/Views/Dashboard/Elements/Element1.g.cshtml.cs
+/Users/shehryarkhan/Projects/Dynamic User-Defined Dashboards/obj/Debug/netcoreapp2.2/Razor/Views/Dashboard/Elements/Element2.g.cshtml.cs
+/Users/shehryarkhan/Projects/Dynamic User-Defined Dashboards/obj/Debug/netcoreapp2.2/Razor/Views/Dashboard/Elements/Element3.g.cshtml.cs
+/Users/shehryarkhan/Projects/Dynamic User-Defined Dashboards/obj/Debug/netcoreapp2.2/Razor/Views/Dashboard/Elements/Element4.g.cshtml.cs
+/Users/shehryarkhan/Projects/Dynamic User-Defined Dashboards/obj/Debug/netcoreapp2.2/Razor/Views/Dashboard/Elements/Element5.g.cshtml.cs
+/Users/shehryarkhan/Projects/Dynamic User-Defined Dashboards/obj/Debug/netcoreapp2.2/Razor/Views/Dashboard/Elements/ElementList.g.cshtml.cs
+/Users/shehryarkhan/Projects/Dynamic User-Defined Dashboards/obj/Debug/netcoreapp2.2/Razor/Views/Dashboard/Index.g.cshtml.cs
+/Users/shehryarkhan/Projects/Dynamic User-Defined Dashboards/obj/Debug/netcoreapp2.2/Razor/Views/Dashboard/Templates/Template1.g.cshtml.cs
+/Users/shehryarkhan/Projects/Dynamic User-Defined Dashboards/obj/Debug/netcoreapp2.2/Razor/Views/Dashboard/Templates/Template2.g.cshtml.cs
+/Users/shehryarkhan/Projects/Dynamic User-Defined Dashboards/obj/Debug/netcoreapp2.2/Razor/Views/Dashboard/Templates/Template3.g.cshtml.cs
+/Users/shehryarkhan/Projects/Dynamic User-Defined Dashboards/obj/Debug/netcoreapp2.2/Razor/Views/Dashboard/Templates/Template4.g.cshtml.cs
+/Users/shehryarkhan/Projects/Dynamic User-Defined Dashboards/obj/Debug/netcoreapp2.2/Razor/Views/Dashboard/Templates/Template5.g.cshtml.cs
+/Users/shehryarkhan/Projects/Dynamic User-Defined Dashboards/obj/Debug/netcoreapp2.2/Razor/Views/Dashboard/Templates/Template6.g.cshtml.cs
+/Users/shehryarkhan/Projects/Dynamic User-Defined Dashboards/obj/Debug/netcoreapp2.2/Razor/Views/Dashboard/Templates/Template7.g.cshtml.cs
+/Users/shehryarkhan/Projects/Dynamic User-Defined Dashboards/obj/Debug/netcoreapp2.2/Razor/Views/Dashboard/Templates/Template8.g.cshtml.cs
+/Users/shehryarkhan/Projects/Dynamic User-Defined Dashboards/obj/Debug/netcoreapp2.2/Razor/Views/Dashboard/Templates/TemplateList.g.cshtml.cs

@@ -1,0 +1,42 @@
+<style>
+   #dashboard {
+  align: center;  
+  width: auto; 
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+#b {
+    height: 500px;
+}
+</style>
+
+<div align="center"   class="row">
+    <div class="col-lg-12">
+        <div id="b" class="white-box m-t-30 center-block">
+            <form id="dashboard" >
+                <h1 class="" >Welcome to Dashboard Wizard</h1>
+                <div class="form-group">
+                    <label for="exampleInputkwh">Enter Dashboard Name</label>
+                    <div class="input-group">
+                        <div class="input-group-addon"><i class="fa fa-dashboard"></i></div>
+                        <input type="text" class="form-control" id="dashboard-name" name="dashboard-name"/> 
+                    </div>
+                    <br>
+                    <div align="center">
+                        <button type="button" class="btn custom-btn waves-effect waves-light" data-dismiss="modal" data-toggle="modal" onclick="DashboardTemplates()">Next</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script>
+    function DashboardTemplates()
+    {
+        localStorage.setItem("dashboard_name", $("#dashboard-name").val());
+        window.location = "/Dashboard/TemplateList/";
+    }
+</script>

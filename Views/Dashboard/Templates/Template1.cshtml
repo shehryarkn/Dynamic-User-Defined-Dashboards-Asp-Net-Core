@@ -1,0 +1,75 @@
+@{
+    ViewBag.E1Height = "450px";
+    ViewBag.DHeight = "450px";
+}
+
+<style>
+    .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9 {
+        padding-left: 0px;
+    }
+    .white-box {
+        padding: 20px;
+        margin-bottom: 0px;
+    }
+    .container-fluid {
+        padding-left:0px;
+    }
+</style>
+
+<div id="row">
+    <div class="col-lg-12 place" style="margin:20px"  id="1">
+        <div class="white-box" style="height:500px;" >
+            @{ string t1 = ViewData["Element1"].ToString(); Html.RenderPartial(t1); }
+        </div>
+    </div>
+</div>
+ 
+<script>
+
+    $('.place').click(function(event) {
+        var place = $(this).attr('id');
+        localStorage.setItem("placement", place);
+        window.location = "/Dashboard/ElementList/"+'@ViewData["dashboardId"]';
+    });
+
+    function EnableDisableEditing() {
+
+        if($("#editing-button").text() == "Enable Editing"){
+            localStorage.setItem("dashboard-editing", 1);
+            $("#editing-button").text("Done Editing");
+            $("#editing-message").text("* Dashboard Editing is Enabled, Click on Element to Update.");
+        }
+        else{
+            localStorage.setItem("dashboard-editing", 0);
+            $("#editing-button").text("Enable Editing");
+            $("#editing-message").text("* Enable Editing to Update Dashboard Elements");
+        }
+    }
+
+    function DeleteDashboard(){
+
+        $.ajax(
+        {
+            type: "POST",
+            url: '@Url.Action("DeleteDashboard", "Dashboard")',
+            data: {
+                dashboardId: '@ViewData["dashboardId"]'
+            },
+            error: function (result) {
+                alert(result);
+            },
+            success: function (result) {
+
+                if (result.status == true) {
+                    
+                    swal( "Done!", result.message, "success");
+                    window.location = result.default_dashboard;
+                }
+                else {
+                    swal("Problem!", result.message, "warning");
+                }
+            }
+        });
+    }
+
+</script>

@@ -1,0 +1,144 @@
+@{
+    ViewBag.Title = "Dashboard's Template Selection";
+}
+
+<!-- Content Header (Page header) -->
+<section class="content-header">
+    <h1>
+        Templates List
+    </h1>
+</section>
+
+<!-- Main content -->
+<section class="content container-fluid">
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="row">
+                <br>
+                <div class="col-sm-6">
+                    <div class="col-sm-1">
+                        <div>
+                            <input id="1" type="radio" name="template" checked>
+                        </div>
+                    </div>
+                    <div class="col-sm-11 text-right"> <img src="~/images/DashboardTemplates/t1.JPG" alt="image" class="img-thumbnail">
+                        <p class="m-t-15 m-b-0"> <code>Template 1</code> </p>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="col-sm-1">
+                        <div>
+                            <input id="2" type="radio" name="template">
+                        </div>
+                    </div>
+                    <div class="col-sm-11 text-right"> <img src="~/images/DashboardTemplates/t2.JPG" alt="image" class="img-thumbnail">
+                        <p class="m-t-15 m-b-0"> <code>Template 2</code> </p>
+                    </div>
+                </div>
+            </div>
+            <br><hr><br>
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="col-sm-1">
+                        <div>
+                            <input id="3" type="radio" name="template">
+                        </div>
+                    </div>
+                    <div class="col-sm-11 text-right"> <img src="~/images/DashboardTemplates/t3.JPG" alt="image" class="img-thumbnail">
+                        <p class="m-t-15 m-b-0"> <code>Template 3</code> </p>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="col-sm-1">
+                        <div>
+                            <input id="4" type="radio" name="template">
+                        </div>
+                    </div>
+                    <div class="col-sm-11 text-right"> <img src="~/images/DashboardTemplates/t4.JPG" alt="image" class="img-thumbnail">
+                        <p class="m-t-15 m-b-0"> <code>Template 4</code> </p>
+                    </div>
+                </div>
+            </div>
+            <br><hr><br>
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="col-sm-1">
+                        <div>
+                            <input id="5" type="radio" name="template">
+                        </div>
+                    </div>
+                    <div class="col-sm-11 text-right"> <img src="~/images/DashboardTemplates/t5.JPG" alt="image" class="img-thumbnail">
+                        <p class="m-t-15 m-b-0"> <code>Template 5</code> </p>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="col-sm-1">
+                        <div>
+                            <input id="6" type="radio" name="template">
+                        </div>
+                    </div>
+                    <div class="col-sm-11 text-right"> <img src="~/images/DashboardTemplates/t6.JPG" alt="image" class="img-thumbnail">
+                        <p class="m-t-15 m-b-0"> <code>Template 6</code> </p>
+                    </div>
+                </div>
+            </div>
+            <br><hr><br>
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="col-sm-1">
+                        <div>
+                            <input id="7" type="radio" name="template">
+                        </div>
+                    </div>
+                    <div class="col-sm-11 text-right"> <img src="~/images/DashboardTemplates/t7.JPG" alt="image" class="img-thumbnail">
+                        <p class="m-t-15 m-b-0"> <code>Template 7</code> </p>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="col-sm-1">
+                        <div>
+                            <input id="8" type="radio" name="template">
+                        </div>
+                    </div>
+                    <div class="col-sm-11 text-right"> <img src="~/images/DashboardTemplates/t8.JPG" alt="image" class="img-thumbnail">
+                        <p class="m-t-15 m-b-0"> <code>Template 8</code> </p>
+                    </div>
+                </div>
+            </div>
+            <br><hr>
+            <div align="right">
+                <button type="btn" class="btn custom-btn waves-effect waves-light m-r-10" onclick="Next()">Next</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+
+    function Next(){
+
+        $.ajax(
+        {
+            type: "POST",
+            url: '@Url.Action("Createdashboard", "Dashboard")',
+            data: {
+                Name: localStorage.getItem("dashboard_name"),
+                TemplateId: $('input[type=radio][name=template]:checked').attr('id')
+            },
+            error: function (result) {
+                alert("error");
+            },
+            success: function (result) {
+
+                if (result != "False") {
+                    window.location = "/Dashboard/Dashboard/"+result;
+                }
+                else {
+                    alert("There is a Problem!");
+                }
+            }
+        });
+        
+    }
+
+</script>

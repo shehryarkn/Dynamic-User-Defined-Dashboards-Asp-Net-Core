@@ -1,0 +1,105 @@
+@{
+    ViewBag.Title = "Dashboard Elements";
+}
+
+<!-- Content Header (Page header) -->
+<section class="content-header">
+    <h1>
+        Elements List
+    </h1>
+</section>
+
+<!-- Main content -->
+<section class="content container-fluid">
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="row">
+                <!-- Element1 -->
+                <div class="col-md-6 col-lg-6 col-xs-12">
+                    <button type="btn" onclick="" class="btn custom-btn waves-effect waves-light m-b-10 pull-right" id="1">Add</button>
+                    <div class="white-box" style="width: 400px; height: 300px">
+                        <div class="white-box" style="height:350px; width:100%; padding-left:0px; padding-right:0px; padding-bottom:0px;">
+                            @{ Html.RenderPartial("Element1.cshtml"); }
+                        </div>
+                    </div>
+                </div>
+                <!-- Element2 -->
+                <div class="col-md-6 col-lg-6 col-xs-12">
+                    <button type="btn" onclick="" class="btn custom-btn waves-effect waves-light m-b-10 pull-right" id="2">Add</button>
+                    <div class="white-box" style="width: 400px; height: 300px">
+                        <div class="white-box" style="height:350px; width:100%; padding-left:0px; padding-right:0px; padding-bottom:0px;">
+                            @{ Html.RenderPartial("Element2.cshtml"); }
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <!-- Element3 -->
+                <div class="col-md-6 col-lg-6 col-xs-12">
+                    <button type="btn" onclick="" class="btn custom-btn waves-effect waves-light m-b-10 pull-right" id="3">Add</button>
+                    <div class="white-box" style="width: 400px; height: 300px">
+                        <div class="white-box" style="height:350px; width:100%; padding-left:0px; padding-right:0px; padding-bottom:0px;">
+                            @{ Html.RenderPartial("Element3.cshtml"); }
+                        </div>
+                    </div>
+                </div>
+                <!-- Element4 -->
+                <div class="col-md-6 col-lg-6 col-xs-12">
+                    <button type="btn" onclick="" class="btn custom-btn waves-effect waves-light m-b-10 pull-right" id="4">Add</button>
+                    <div class="white-box" style="width: 400px; height: 300px">
+                        <div class="white-box" style="height:350px; width:100%; padding-left:0px; padding-right:0px; padding-bottom:0px;">
+                            <br>@{ Html.RenderPartial("Element4.cshtml"); }
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <!-- Element5 -->
+                <div class="col-md-12 col-lg-12 col-xs-12">
+                    <button type="btn" onclick="" class="btn custom-btn waves-effect waves-light pull-right" id="5">Add</button>
+                    <div class="white-box" style="height: 300px">
+                        <div class="white-box" style="height:350px; width:100%; padding-left:0px; padding-right:0px; padding-bottom:0px;">
+                            <br>@{ Html.RenderPartial("Element5.cshtml"); }
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+
+    $(function() {
+
+        $('button.btn').on('click', function(e){
+
+            var dashboardId = '@ViewData["dashboardId"]';
+            $.ajax(
+            {
+                type: "POST",
+                url: '@Url.Action("AddElement", "Dashboard")',
+                data: {
+                    DashboardId: dashboardId,
+                    ElementId: this.id,
+                    Placement: localStorage.getItem("placement")
+                },
+                error: function (result) {
+                    alert(result);
+                },
+                success: function (result) {
+
+                    if (result == "True") {
+                        window.location = "/Dashboard/Dashboard/"+dashboardId;
+                    }
+                    else {
+                        alert("There is a Problem!");
+                    }
+                }
+            });
+        });
+    });
+</script>
+

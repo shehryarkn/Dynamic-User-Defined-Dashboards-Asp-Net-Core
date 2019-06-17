@@ -1,0 +1,36 @@
+<ul class="sidebar-menu" data-widget="tree">
+<li class="header">HEADER</li>
+<!-- Optionally, you can add icons to the links -->
+<li><a href="/Dashboard/Index"><i class="fa fa-dashboard"></i> <span>Create New</span></a></li>
+<li class="treeview">
+    <a href="#"><i class="fa fa-dashboard"></i> <span>Dashboards</span>
+    <span class="pull-right-container">
+        <i class="fa fa-angle-left pull-right"></i>
+        </span>
+    </a>
+    <ul class="treeview-menu" id="menu">
+    </ul>
+</li>
+</ul>
+
+<script>
+
+    $(function() {
+
+        $.ajax(
+        {
+            type: "POST",
+            url: '@Url.Action("GetDashboardsList", "Dashboard")',
+            error: function (result) {
+                alert(result);
+            },
+            success: function (result) {
+                var menu = null;
+                $.each( result, function( key, value ) {
+                    menu += '<li><a href="/Dashboard/Dashboard/'+value.id+'">'+value.name+'</a></li>';
+                });
+                $("#menu").html(menu);
+            }
+        });
+});
+</script>
